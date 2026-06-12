@@ -16,7 +16,7 @@ export const gridRows: GridRow[] = [
     editedBy: people.sam,
     lastEdited: "06 Aug, 2025",
     starred: false,
-    flags: ["shared", "locked"],
+    expandable: true,
   },
   {
     id: "g2",
