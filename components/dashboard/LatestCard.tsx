@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/Card";
 
 export function LatestCard() {
   return (
-    <Card className="px-5 py-4 lg:h-[166px] bg-[rgba(231, 243, 248, 0.5)]">
+    <Card className="px-5 py-4 lg:h-[166px] bg-[rgba(231,243,248,0.5)]">
       <div className="mb-3 flex items-center justify-between">
         <p className="text-sm font-semibold text-ink-900">Latest from Bitscale</p>
         <div className="flex items-center gap-1" aria-hidden="true">
