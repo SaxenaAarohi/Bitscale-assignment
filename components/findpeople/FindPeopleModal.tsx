@@ -47,7 +47,7 @@ export function FindPeopleModal({
 
         <div className="grid min-h-0 flex-1 grid-cols-1 md:grid-cols-[319px_minmax(0,1fr)]">
           <section className="flex min-h-0 flex-col border-b border-line md:border-b-0 md:border-r">
-            <div className="flex min-h-0 flex-1 flex-col overflow-y-auto px-8">
+            <div className="flex min-h-0 flex-1 flex-col overflow-y-auto pl-8">
               {findPeopleFilters.map((field) => (
                 <FilterField
                   key={field.id}
@@ -65,11 +65,7 @@ export function FindPeopleModal({
               >
                 Save Search
               </Button>
-              <Button
-                variant="dark"
-                className="flex-1"
-                leftIcon={<Eye className="h-4 w-4" />}
-              >
+                 <Button variant="dark" leftIcon={<Eye className="h-4 w-4" />}  className={"h-[34px] w-[160px] px-[6px]"}>
                 Preview Result
               </Button>
             </div>
