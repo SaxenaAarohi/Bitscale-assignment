@@ -28,8 +28,7 @@ export function FindPeopleModal({
       className="max-w-[1025px] md:h-[718px]"
     >
       <div className="flex h-full flex-col">
-
-        <div className="flex items-center gap-12 border-b border-line px-8 pt-[32px]">
+        <header className="flex shrink-0 items-center gap-4 border-b border-line px-8 pb-4 pt-8">
           <h2 id="find-people-title" className="text-base font-semibold text-ink-900">
             Find People
           </h2>
@@ -44,12 +43,11 @@ export function FindPeopleModal({
           >
             <X className="h-5 w-5" />
           </button>
-        </div>
+        </header>
 
-        <div className="grid min-h-0 flex-1 grid-cols-1 md:grid-cols-[319px_1fr] mt-4">
-
-          <div className="flex min-h-0 flex-col border-b border-line md:border-b-0 md:border-r">
-            <div className="flex h-[550px] flex-col overflow-hidden px-8">
+        <div className="grid min-h-0 flex-1 grid-cols-1 md:grid-cols-[319px_minmax(0,1fr)]">
+          <section className="flex min-h-0 flex-col border-b border-line md:border-b-0 md:border-r">
+            <div className="flex min-h-0 flex-1 flex-col overflow-y-auto px-8">
               {findPeopleFilters.map((field) => (
                 <FilterField
                   key={field.id}
@@ -59,19 +57,26 @@ export function FindPeopleModal({
                 />
               ))}
             </div>
-            <div className="flex items-center gap-2 px-8 py-4">
-              <Button variant="secondary" leftIcon={<Bookmark className="h-4 w-4" />}>
+            <div className="flex shrink-0 items-center gap-2 px-8 py-4">
+              <Button
+                variant="secondary"
+                className="flex-1"
+                leftIcon={<Bookmark className="h-4 w-4" />}
+              >
                 Save Search
               </Button>
-                 <Button variant="dark" leftIcon={<Eye className="h-4 w-4" />}  className={"h-[34px] w-[160px] px-[6px]"}>
+              <Button
+                variant="dark"
+                className="flex-1"
+                leftIcon={<Eye className="h-4 w-4" />}
+              >
                 Preview Result
               </Button>
             </div>
-          </div>
+          </section>
 
-          <div className="flex min-h-0 min-w-0 flex-col">
-
-            <div className="flex flex-col gap-1 px-4 py-2.5">
+          <section className="flex min-h-0 min-w-0 flex-col">
+            <div className="flex shrink-0 flex-col gap-1 px-4 py-2.5">
               <div className="flex items-center justify-between gap-3">
                 <p className="text-xs text-ink-500">
                   Found <span className="font-semibold text-ink-900">0</span> companies.
@@ -91,7 +96,7 @@ export function FindPeopleModal({
               </div>
             </div>
 
-            <div className="flex gap-3 overflow-hidden bg-white px-4 py-2.5 shadow-[0_2px_6px_rgba(16,24,40,0.08)]">
+            <div className="flex shrink-0 gap-3 overflow-hidden bg-white px-4 py-2.5 shadow-[0_2px_6px_rgba(16,24,40,0.08)]">
               {resultColumns.map((col) => (
                 <span
                   key={col.id}
@@ -102,10 +107,10 @@ export function FindPeopleModal({
               ))}
             </div>
 
-            <div className="flex flex-1 items-center justify-center">
+            <div className="flex min-h-0 flex-1 items-center justify-center overflow-y-auto">
               <EmptyResults />
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </Modal>
