@@ -5,10 +5,9 @@
 @layer base {
   html,
   body {
-    @apply bg-canvas text-ink-900 antialiased;
+    @apply bg-white text-ink-900 antialiased;
   }
 
-  /* Thin, unobtrusive scrollbars to match the clean SaaS look */
   * {
     scrollbar-width: thin;
     scrollbar-color: #d4d4d8 transparent;
@@ -32,7 +31,6 @@
   }
 }
 
-/* Subtle entrance animations (kept gentle, prefers-reduced-motion aware) */
 @keyframes fade-in {
   from {
     opacity: 0;
