@@ -80,19 +80,19 @@ export function GridsTable({
       <table className="w-full min-w-[640px] border-collapse text-sm">
         <thead>
           <tr className="border-b border-line text-left text-xs font-medium text-ink-400">
-            <th scope="col" className="px-5 py-2.5 font-medium">
+            <th scope="col" className="px-5 py-1.5 font-medium">
               <span className="inline-flex items-center gap-1">
                 Name
                 <ArrowUpDown className="h-3 w-3" aria-hidden="true" />
               </span>
             </th>
-            <th scope="col" className="px-5 py-2.5 font-medium">
+            <th scope="col" className="px-5 py-1.5 font-medium">
               Edited by
             </th>
-            <th scope="col" className="px-5 py-2.5 font-medium">
+            <th scope="col" className="px-5 py-1.5 font-medium">
               Last edited
             </th>
-            <th scope="col" className="px-5 py-2.5 text-right font-medium">
+            <th scope="col" className="px-5 py-1.5 text-right font-medium">
               Actions
             </th>
           </tr>
@@ -101,9 +101,9 @@ export function GridsTable({
           {rows.map((row) => (
             <tr
               key={row.id}
-              className="group border-b border-line last:border-0 transition-colors hover:bg-canvas/60"
+              className="group h-10 border-b border-line bg-white transition-colors hover:bg-canvas/60"
             >
-              <td className="px-5 py-2.5">
+              <td className="px-5 py-1.5">
                 <div className="flex items-center gap-2.5">
                   <button
                     onClick={() => onToggleStar(row.id)}
@@ -136,7 +136,7 @@ export function GridsTable({
                   })}
                 </div>
               </td>
-              <td className="px-5 py-2.5">
+              <td className="px-5 py-1.5">
                 <div className="flex items-center gap-2">
                   <Avatar
                     initials={row.editedBy.initials}
@@ -146,8 +146,8 @@ export function GridsTable({
                   <span className="text-ink-600">{row.editedBy.name}</span>
                 </div>
               </td>
-              <td className="px-5 py-2.5 text-ink-500">{row.lastEdited}</td>
-              <td className="px-5 py-2.5">
+              <td className="px-5 py-1.5 text-ink-500">{row.lastEdited}</td>
+              <td className="px-5 py-1.5">
                 <div className="flex justify-end">
                   <RowActions name={row.name} />
                 </div>

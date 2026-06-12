@@ -49,7 +49,7 @@ export function FindPeopleModal({
         <div className="grid min-h-0 flex-1 grid-cols-1 md:grid-cols-[319px_1fr]">
 
           <div className="flex min-h-0 flex-col border-b border-line md:border-b-0 md:border-r">
-            <div className="flex-1 overflow-y-auto px-5">
+            <div className="flex h-[550px] flex-col overflow-hidden px-5">
               {findPeopleFilters.map((field) => (
                 <FilterField
                   key={field.id}
