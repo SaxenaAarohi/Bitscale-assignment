@@ -63,7 +63,7 @@ export function FindPeopleModal({
               <Button variant="secondary" leftIcon={<Bookmark className="h-4 w-4" />}>
                 Save Search
               </Button>
-              <Button variant="dark" leftIcon={<Eye className="h-4 w-4" />}>
+                 <Button variant="dark" leftIcon={<Eye className="h-4 w-4" />}  className={"h-[34px] w-[160px] px-[6px]"}>
                 Preview Result
               </Button>
             </div>
