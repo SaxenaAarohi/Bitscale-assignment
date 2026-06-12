@@ -21,7 +21,7 @@ export function FilterField({
   useClickOutside(ref, () => setOpen(false), open);
 
   return (
-    <div className="flex flex-1 h-[73px] w-[319px] flex-col justify-center border-b border-line ">
+    <div className="flex flex-1 h-[73px] w-[280px] flex-col justify-center border-b border-line ">
       <label
         htmlFor={`filter-${field.id}`}
         className="mb-3 flex items-center gap-2 text-sm font-medium text-ink-800"
