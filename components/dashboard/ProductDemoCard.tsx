@@ -7,7 +7,7 @@ export function ProductDemoCard({ items }: { items: ChecklistItem[] }) {
   const percent = Math.round((done / items.length) * 100);
 
   return (
-    <Card className="px-5 py-4 lg:h-[166px] bg-[#E7F3F880]">
+    <Card className="px-5 py-4 lg:h-[166px] bg-[#E7F3F8]/50">
       <div className="mb-3 flex items-start justify-between gap-3">
         <div className="flex items-start gap-2.5">
           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-violet-50 text-violet-600">
