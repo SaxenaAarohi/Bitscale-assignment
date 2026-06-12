@@ -29,7 +29,7 @@ export function FindPeopleModal({
     >
       <div className="flex h-full flex-col">
 
-        <div className="flex items-center gap-3 border-b border-line px-5 py-3">
+        <div className="flex items-center gap-12 border-b border-line px-8 pt-[32px]">
           <h2 id="find-people-title" className="text-base font-semibold text-ink-900">
             Find People
           </h2>
@@ -46,10 +46,10 @@ export function FindPeopleModal({
           </button>
         </div>
 
-        <div className="grid min-h-0 flex-1 grid-cols-1 md:grid-cols-[319px_1fr]">
+        <div className="grid min-h-0 flex-1 grid-cols-1 md:grid-cols-[319px_1fr] mt-4">
 
           <div className="flex min-h-0 flex-col border-b border-line md:border-b-0 md:border-r">
-            <div className="flex h-[550px] flex-col overflow-hidden px-5">
+            <div className="flex h-[550px] flex-col overflow-hidden px-8">
               {findPeopleFilters.map((field) => (
                 <FilterField
                   key={field.id}
@@ -59,7 +59,7 @@ export function FindPeopleModal({
                 />
               ))}
             </div>
-            <div className="flex items-center gap-2 px-5 py-3">
+            <div className="flex items-center gap-2 px-8 py-4">
               <Button variant="secondary" leftIcon={<Bookmark className="h-4 w-4" />}>
                 Save Search
               </Button>
