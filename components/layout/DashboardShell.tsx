@@ -9,7 +9,7 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-canvas">
+    <div className="min-h-screen bg-white">
 
       <aside className="fixed inset-y-0 left-0 z-30 hidden w-56 border-r border-line md:block">
         <Sidebar />
