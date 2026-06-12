@@ -49,7 +49,7 @@ export interface GridRow {
   editedBy: Person;
   lastEdited: string;
   starred: boolean;
-
+  expandable?: boolean;
   flags?: ("locked" | "shared" | "alert")[];
 }
 
